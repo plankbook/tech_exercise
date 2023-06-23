@@ -20,30 +20,34 @@
     <div class="header">
       <h1><span style="color: #F05F5D">Level up</span> your coding skills with Webistry.</h1>
     </div>
-<!--
-    <div class="form">
-      <h2>Let’s get started by knowing more about you.</h2>
-      <p>Name</p>
-      <p>Email</p>
-      <p></p>
-      <p>The information provided above is accurate</p>
-    </div> -->
 
     <form id="signup">
       <h2>Let’s get started by knowing more about you.</h2>
-      <label for="name">Name</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email</label><br>
-      <input type="text" id="email" name="email">
+
+      <label for="name">Name</label>
+      <input type="text" placeholder="Enter your name" id="name" name="name" class="form-fields">
+      <br>
+
+      <label for="email">Email</label>
+      <input type="text" placeholder="Enter your email" id="email" name="email" class="form-fields">
+      <br>
+
       <label for="coding-languages">What’s your favorite coding language?</label>
-      <select id="coding-languages" name="coding-languages">
+      <select id="coding-languages" name="coding-languages" class="form-fields">
         <option value="js">JavaScript</option>
         <option value="html">HTML</option>
         <option value="css">CSS</option>
         <option value="ruby">Ruby</option>
       </select>
-      <input type="checkbox" id="confirmation" name="confirmation" value="confirmation">
-      <label for="confirmation">The information provided above is accurate</label>
+      <br>
+
+      <div class="checkbox-div">
+        <input type="checkbox" id="confirmation" name="confirmation" value="confirmation">
+        <label for="confirmation">The information provided above is accurate</label>
+      </div>
+      <br>
+
+      <input type="submit" value="Level Up" class="button">
     </form>
 
   </div>
